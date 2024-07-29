@@ -1,8 +1,8 @@
 package service33
 
 import (
-	MODEL "zero_blog/model"
-	SERIALIZER "zero_blog/serializer"
+	MODEL "gin_web_template/model"
+	SERIALIZER "gin_web_template/serializer"
 )
 
 // UserRegisterService 管理用户注册服务

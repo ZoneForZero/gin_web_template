@@ -1,13 +1,13 @@
 package model
 
 import (
-	GORM "github.com/jinzhu/gorm"
 	"golang.org/x/crypto/bcrypt"
+	"gorm.io/gorm"
 )
 
 // User 用户模型
 type User struct {
-	GORM.Model
+	gorm.Model
 	UserName       string
 	PasswordDigest string
 	Nickname       string

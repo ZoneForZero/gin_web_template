@@ -1,9 +1,10 @@
 package routers
 
 import (
+	controller "gin_web_template/controller"
+	"gin_web_template/middleware"
+
 	"os"
-	"zero_blog/controller"
-	"zero_blog/middleware"
 
 	"github.com/gin-gonic/gin"
 )

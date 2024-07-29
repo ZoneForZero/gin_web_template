@@ -1,8 +1,8 @@
 package service122
 
 import (
-	"zero_blog/model"
-	"zero_blog/serializer"
+	"gin_web_template/model"
+	"gin_web_template/serializer"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

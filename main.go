@@ -1,8 +1,11 @@
 package main
 
 import (
-	"zero_blog/conf"
-	"zero_blog/routers"
+	"gin_web_template/conf"
+	"gin_web_template/server"
+	"os"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -10,6 +13,7 @@ func main() {
 	conf.Init()
 
 	// 装载路由
-	r := routers.AllRouter()
+	gin.SetMode(os.Getenv("GIN_MODE"))
+	r := server.NewRouter()
 	r.Run(":3000")
 }

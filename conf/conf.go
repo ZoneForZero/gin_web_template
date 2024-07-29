@@ -1,10 +1,8 @@
 package conf
 
 import (
+	"gin_web_template/util"
 	"os"
-	"zero_blog/cache"
-	"zero_blog/model"
-	"zero_blog/util"
 
 	"github.com/joho/godotenv"
 )
@@ -23,6 +21,6 @@ func Init() {
 	}
 
 	// 连接数据库
-	model.Database(os.Getenv("MYSQL_DSN"))
-	cache.Redis()
+	//model.Database(os.Getenv("MYSQL_DSN"))
+	//cache.Redis()
 }
